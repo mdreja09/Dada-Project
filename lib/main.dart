@@ -8,6 +8,7 @@ import 'Home.dart';
 //import 'HomeScreen1.dart';
 //import 'Homescreen1.dart';
 import 'LoginRegister.dart';
+import 'Profile.dart';
 import 'SplashScreen.dart';
 
 void main (){
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Discount()
+        home: Profile()
     );
   }
 }
