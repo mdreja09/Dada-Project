@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/EditProfile.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -61,28 +62,34 @@ class _ProfileState extends State<Profile> {
                     // My Profile
                     Row(
                       children: [
-                        Container(
-                          height: 50,
-                          width: 350,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5),
-                            color: Color(0xffFEF6EE8C).withOpacity(0.12),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Icon(Icons.perm_identity),
-                                Text(
-                                  "Person",
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
+                        InkWell(onTap: (){
+                          Navigator.push(context,MaterialPageRoute(
+                              builder: (context)=> Editprofile()));
+                        },
+
+                          child: Container(
+                            height: 50,
+                            width: 350,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Color(0xffFEF6EE8C).withOpacity(0.12),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.perm_identity),
+                                  Text(
+                                    "Person",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                    ),
                                   ),
-                                ),
-                                Icon(Icons.arrow_forward_ios,),
-                              ],
+                                  Icon(Icons.arrow_forward_ios,),
+                                ],
+                              ),
                             ),
                           ),
                         ),

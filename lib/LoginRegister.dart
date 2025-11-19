@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/LoginScreen.dart';
 
 class LoginRegister extends StatefulWidget {
   const LoginRegister({super.key});
@@ -15,7 +16,16 @@ class _LoginsRegisterState extends State<LoginRegister> {
       appBar: AppBar(
         backgroundColor: Colors.white,
 
-        leading: Image.asset("assets/shareback.png"),
+        leading: InkWell(
+          focusColor: Colors.green,
+          onTap: (){
+            setState(() {
+
+            });
+
+            Navigator.pop(context,MaterialPageRoute(builder: (context)=>LoginScreen()));
+          },
+            child: Image.asset("assets/shareback.png")),
         centerTitle: true,
         title: Image.asset(height: 40, width: 133, "assets/picture.png"),
       ),
