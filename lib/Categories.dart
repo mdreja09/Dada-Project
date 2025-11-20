@@ -74,7 +74,7 @@ class _CategoriesState extends State<Categories> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
+              padding: const EdgeInsets.symmetric(vertical: 17),
               child: Row(
                 children: [
                   Padding(
