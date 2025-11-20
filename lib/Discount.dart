@@ -109,7 +109,7 @@ class _DiscountState extends State<Discount> {
                                ),
                                // 'OFFER' Tag (Red Corner with diagonal cut)
                                Positioned(
-                                 top: 0,
+                                 top: 1,
                                  left: 0,
                                  // Custom clipper use kora holo chobi-r moto diagonal cut shape dewar jonne
                                  child: ClipPath(
@@ -123,7 +123,7 @@ class _DiscountState extends State<Discount> {
                                      ),
                                      color: Colors.red,
                                      child: const Text(
-                                       'OFFER',
+                                       'OFFERS',
                                        style: TextStyle(
                                          color: Colors.white,
                                          fontWeight: FontWeight.bold,
