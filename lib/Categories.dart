@@ -42,7 +42,7 @@ class _CategoriesState extends State<Categories> {
           children: [
             Divider(thickness: 3, color: Colors.grey),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
+              padding: const EdgeInsets.symmetric(vertical: 17),
 
               // Search Box
               child: Row(
@@ -78,7 +78,7 @@ class _CategoriesState extends State<Categories> {
               child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
                     child: Column(
                       children: [
                         Row(
@@ -104,7 +104,7 @@ class _CategoriesState extends State<Categories> {
                                   ),
                                   SizedBox(height: 4),
                                   Text(
-                                    "380 Items",
+                                    "381 Items",
                                     style: TextStyle(color: Colors.grey),
                                   ),
                                 ],
