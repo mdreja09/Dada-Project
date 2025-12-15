@@ -36,10 +36,10 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white,
 
       appBar: AppBar(
-        leading: Image.asset("assets/leading.png"),
+        leading: Image.asset("assets/leading.png",color: Colors.black,),
         centerTitle: true,
         title: Image.asset("assets/dadagarments.png"),
-        actions: [Icon(Icons.person, size: 33)],
+        actions: [Icon(Icons.person, size: 33,color: Colors.black,)],
       ),
 
       body: ScreenIndex[cirrentIndex] ,
