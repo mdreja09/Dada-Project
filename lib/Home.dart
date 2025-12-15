@@ -92,7 +92,7 @@ class HomePageContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16),
+      margin: EdgeInsets.symmetric(horizontal: 17),
       width: double.infinity,
       height: double.infinity,
       child: Column(
@@ -167,7 +167,7 @@ class HomePageContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 30),
+                padding: const EdgeInsets.symmetric(vertical: 29),
                 child: Text(
                   "Categories",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
