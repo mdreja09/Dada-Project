@@ -151,7 +151,7 @@ class HomePageContainer extends StatelessWidget {
                     builder: (BuildContext context) {
                       return Container(
                         width: MediaQuery.of(context).size.width,
-                        margin: EdgeInsets.symmetric(horizontal: 5.0),
+                        margin: EdgeInsets.symmetric(horizontal: 6.0),
                         decoration: BoxDecoration(
                           color: Colors.grey,
                           image: DecorationImage(image: NetworkImage(a)),
