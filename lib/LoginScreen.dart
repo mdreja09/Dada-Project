@@ -13,6 +13,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginscreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   bool isBlue = true;
+  bool _obscure = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -188,7 +190,16 @@ class _LoginscreenState extends State<LoginScreen> {
 
 
                         decoration: InputDecoration(
-                          suffixIcon: Icon(Icons.visibility_off),
+                          suffixIcon: IconButton(
+                            icon: Icon(
+                              _obscure ? Icons.visibility_off : Icons.visibility,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                _obscure = !_obscure;
+                              });
+                            },
+                          ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
