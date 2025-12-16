@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl_mobile_field/mobile_number.dart';
 import 'package:untitled4/Home.dart';
 import 'package:untitled4/LoginRegister.dart';
 
@@ -139,6 +140,7 @@ class _LoginscreenState extends State<LoginScreen> {
                       padding: const EdgeInsets.only(right: 16),
                       
                       child: TextFormField(
+                        keyboardType: TextInputType.phone,
                         validator: (v){
                           if( v== null || v.isEmpty){
                             return "Please Enter Number";
@@ -172,6 +174,7 @@ class _LoginscreenState extends State<LoginScreen> {
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
                       child: TextFormField(
+                        obscureText: true,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             return "Password required";
@@ -354,6 +357,11 @@ class _LoginscreenState extends State<LoginScreen> {
                 ),
               ),
             ),
+            ElevatedButton(onPressed: (){
+              if(_formKey.currentState!.validate()){
+                print("ok");
+              }
+            }, child: Text("Submit"))
           ],
         ),
       ),
