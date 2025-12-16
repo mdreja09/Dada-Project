@@ -172,6 +172,16 @@ class _LoginscreenState extends State<LoginScreen> {
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
                       child: TextFormField(
+                        validator: (value) {
+                          if (value == null || value.isEmpty) {
+                            return "Password required";
+                          }
+                          if (!RegExp(r'^(?=.*[A-Za-z])(?=.*\d).{8,}$').hasMatch(value)) {
+                            return "Use letters & numbers (8+)";
+                          }
+                          return null;
+                        },
+
 
 
                         decoration: InputDecoration(
