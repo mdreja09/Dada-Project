@@ -27,7 +27,7 @@ class _LoginsRegisterState extends State<LoginRegister> {
           },
             child: Image.asset("assets/shareback.png")),
         centerTitle: true,
-        title: Image.asset(height: 40, width: 133, "assets/picture.png"),
+        title: Image.asset(height: 41, width: 133, "assets/picture.png"),
       ),
       body: ListView(
        // crossAxisAlignment: CrossAxisAlignment.start,
