@@ -143,7 +143,7 @@ class HomePageContainer extends StatelessWidget {
                   viewportFraction: 0.8,
                   autoPlayAnimationDuration: Duration(seconds: 1),
 
-                  height: 200.0,
+                  height: 190.0,
                 ),
 
                 items: AllImage().imgList.map((a) {
